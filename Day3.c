@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    int n, k, i, comparisons = 0;
+    int n,k,i,comparisons = 0;
     int arr[100];
     
     scanf("%d", &n);
     
-    for(i = 0; i < n; i++) {
+    for(i=0;i<n;i++) {
         scanf("%d", &arr[i]);
     }
     
     scanf("%d", &k);
     
-    for(i = 0; i < n; i++) {
+    for(i=0;i<n;i++) {
         comparisons++;
         if(arr[i] == k) {
             printf("Found at index %d\n", i);
