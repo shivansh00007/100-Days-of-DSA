@@ -7,7 +7,6 @@ struct node {
     struct node* prev;
 };
 
-// Create doubly linked list
 struct node* createList(int n) {
     struct node *head = NULL, *temp = NULL, *newnode;
     int value, i;
@@ -25,7 +24,7 @@ struct node* createList(int n) {
             temp = newnode;
         } else {
             temp->next = newnode;
-            newnode->prev = temp;   // Important line
+            newnode->prev = temp;  
             temp = newnode;
         }
     }
@@ -33,7 +32,6 @@ struct node* createList(int n) {
     return head;
 }
 
-// Traverse forward
 void printForward(struct node* head) {
     struct node* temp = head;
 
